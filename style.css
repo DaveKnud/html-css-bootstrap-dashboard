@@ -1,0 +1,32 @@
+header{
+    height: 80px;
+    background-color: aqua;
+}
+
+/* NAV-LEFT */
+.nav-left{
+    min-height: calc(100vh - 80px) ;
+    width: 150px;
+    background-color:#0F263D;
+}
+
+/* NAV CENTER */
+.nav-center{
+    height: 150px;
+    width: 100vw;
+    background-color:#1B72E8;
+    padding-right: 5%;
+}
+
+.nav-center button{
+    border-radius:25px;
+    background-color:#165BBA;
+    height: 30px;
+}
+
+
+/* DEBUG */
+[class*="col"] {
+    background-color: aqua;
+    border: 2px solid violet;
+}
