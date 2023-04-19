@@ -41,17 +41,23 @@ header{
     height: 30px;
 }
 
-/* PROSSIME CLASSI */
+/* CONTAINER PROSSIME CLASSI AND FAQ */
 .container-prossime-classi-and-faq{
 width:60%;
 background-color:aquamarine;
+padding: 1%;
+}
+
+/* PROSSIME CLASSI */
+.prossime-classi{
+    width: 100%;
 }
 
 .table-container{
     border:1px solid silver;
 }
 
-.table-container h1,
+caption,
 .faq{
     background-color:rgb(232, 232, 232);
 }
@@ -62,8 +68,27 @@ background-color:aquamarine;
 
 /* FAQ */
 .faq{
-    margin-top: 5%;
+    width: 100%;
+    margin-top:2%;}
+
+/* TODO */
+.container-todo-utenti-attivi{
+    width: 35%;
+    margin: 0 auto;
 }
+.border.rounded{
+    padding:5px;
+}
+
+/* UTENTI ATTIVI */
+.utenti-attivi{
+    margin-top: 30px;
+}
+
+.img-stats img{
+    max-width: 100%;
+}
+
 
 
 
