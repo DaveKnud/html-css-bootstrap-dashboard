@@ -23,7 +23,7 @@ header{
 
 /* NAV CENTER */
 .central{
-    height: calc(100vh - 80px);
+    height:100vh;
     width: 100vw;
     background-color:beige;
 }
@@ -40,5 +40,31 @@ header{
     background-color:#165BBA;
     height: 30px;
 }
+
+/* PROSSIME CLASSI */
+.container-prossime-classi-and-faq{
+width:60%;
+background-color:aquamarine;
+}
+
+.table-container{
+    border:1px solid silver;
+}
+
+.table-container h1,
+.faq{
+    background-color:rgb(232, 232, 232);
+}
+
+.class{
+    padding-right: 150px;
+}
+
+/* FAQ */
+.faq{
+    margin-top: 5%;
+}
+
+
 
 
