@@ -1,7 +1,17 @@
 header{
     height: 80px;
-    background-color: aqua;
+    padding-left: 1%;
+    padding-right: 1%;
 }
+
+header i{
+    padding-left: 10px;
+}
+
+.logo{
+    margin-right: 15px;
+}
+
 
 /* NAV-LEFT */
 .nav-left{
@@ -18,44 +28,59 @@ header{
     color: white;
     line-height: 35px;
     margin-left: 10%;
+}
+
+.nav-left i {
+    margin-right: 10px;
+}
+/* NAV LEFT XS */
+.continer-nav-left-xs{
+    padding: 0.5%;
+    display: none;
 
 }
+
+.nav-left-xs{
+   height: 100%;
+   width: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color:#0F263D;
+   text-align: center;
+   color:white;
+}
+
+
 
 /* NAV CENTER */
 .central{
     height:100%;
-    width: 100vw;
-    background-color:beige;
+    width: 100%;
+   
 }
-.nav-center{width: 100%;}
 
 .students{
-    height: 150px;
+    height: 120px;
     background-color:#1B72E8;
     padding-right: 5%;
 }
 
-.nav-center button{
+.nav-center .boolean-piano-blaze button{
     border-radius:25px;
     background-color:#165BBA;
     height: 30px;
 }
 
+
 /* CONTAINER PROSSIME CLASSI AND FAQ */
 .container-prossime-classi-and-faq{
 width:60%;
-background-color:aquamarine;
+
 padding: 1%;
 }
 
 /* PROSSIME CLASSI */
-.prossime-classi{
-    width: 100%;
-}
-
-.table-container{
-    border:1px solid silver;
-}
 
 caption,
 .faq{
@@ -64,6 +89,16 @@ caption,
 
 .class{
     padding-right: 150px;
+}
+
+.prossime-classi i{
+    max-width: 100%;
+    font-size: 150%;
+
+}
+
+.prossime-classi td{
+    padding: 0.1rem;
 }
 
 /* FAQ */
@@ -78,6 +113,7 @@ caption,
 }
 .border.rounded{
     padding:5px;
+    max-width: 100%;
 }
 
 /* UTENTI ATTIVI */
@@ -85,10 +121,15 @@ caption,
     margin-top: 30px;
 }
 
-.img-stats img{
-    max-width: 100%;
+/* @media all and (max-width: 768px) {
+    .container-todo-utenti-attivi{
+        width: 100%;
 }
-
+    .container-prossime-classi-and-faq{
+        width: 100%;
+    }
+}
+ */
 
 
 

@@ -12,49 +12,67 @@
 </head>
 
 <!-- HEADER -->
-<header class="header d-flex align-items-center">
-    <div class="container-fluid text-center">
-        <div class="row">
-            <div class="col">
-            1 of 3
-            </div>
-            <div class="col-9">
-            2 of 3 (wider)
-            </div>
-            <div class="col">
-                <div class="row justify-content-center">
-                <div class="col-3">2 of</div>
-                <div class="col-3">2 of</div>
-                <div class="col-3">2 of</div>
-                <div class="col-2">2 of</div>
-            </div>
-        </div>
+<header class="header d-flex align-items-center justify-content-between">
+    <div class="logo"> <img src="logo.svg" alt=""></div>
+    <div class="col-sm-5 col-md-7 col-lg-9">
+        <nav class="navbar bg-body-tertiary">
+            <form class="container-fluid">
+                <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" class="form-control" placeholder="Prova a cercare: Lezione di Lavarel" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+            </form>
+        </nav>
     </div>
-
+    <div class="d-flex">
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
 </header>
 
     <!-- NAV LEFT -->
 <div class="big-container d-flex ">
-    <nav class="nav-left d-flex flex-column justify-content-between">
+    <nav class="nav-left d-flex flex-column justify-content-between d-none d-md-flex">
         <div>
-            <div><a href="">Home</a></div>
-            <div><a href="">Stats</a></div>
-            <div><a href="">Signals</a></div>
+            <div><a href=""> <i class="fa-solid fa-house"></i>Home</a></div>
+            <div><a href=""> <i class="fa-solid fa-lines-leaning"></i> Stats</a></div>
+            <div><a href=""> <i class="fa-solid fa-signal"></i>Signals</a></div>
         </div>
         <div>
             <div><a href="">Admin</a></div>
         </div>
-
-
     </nav>
+
+         <!-- NAV-LEFT XS -->
+         <div class="continer-nav-left-xs d-flex d-md-none">
+            <div class="nav-left-xs ">
+    
+                <div class="icons-top">
+                    <div><img src="logo-small.svg" alt=""></div>
+                    <div><i class="fa-solid fa-house"></i></div>
+                    <div><i class="fa-solid fa-lines-leaning"></i></div>
+                    <div><i class="fa-solid fa-signal"></i></div>
+                </div>
+    
+                <div class="icons-buttom">
+                    <div><i class="fa-solid fa-gear"></i> </div>
+                </div>
+            </div>
+        </div>
+    
 
     <!-- NAV CENTER -->
     <div class="central">
         <div class="students d-flex align-items">
-            <nav class="nav-center d-flex justify-content-between text-white">
-                <div class="boolean-piano-blaze d-flex align-items-center  ">
-                    <h2>BOOLEAN</h2>
-                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <nav class="nav-center w-100 d-flex justify-content-between align-items-center text-white">
+                <div class="boolean-piano-blaze d-flex flex-column align-items-center  ">
+                    <div class="d-flex align-items-center ">
+                        <h2>BOOLEAN</h2>
+                        <button type="button" class="btn btn-primary btn-sm">Piano blaze</button>
+                    </div>
+                   
                     <div>
                         <button type="button" class="btn btn-primary btn-sm">Small button</button>
                         <button type="button" class="btn btn-primary btn-sm">Small button</button>
@@ -67,6 +85,19 @@
                 </div>
                 <div class="d-flex align-items-center">
                     <div>Nuovo Studente</div>
+                    <div>
+                        <button class="btn btn-primary border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                ...
+                            </div>
+                            </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -79,35 +110,93 @@
 
                 <!-- PROSSIME CLASSI -->
                 <div class="prossime-classi">
-                    <div class="table-container rounded">
+                    <div class="table-container border rounded">
                         <table class="table table-hover caption-top">
                             <caption> <h1>Prossime Classi</h1></caption>
                             <thead>
                             <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Nome</th>
+                                <th class="d-none d-lg-table-cell" scope="col">Data inizio</th>
+                                <th class="d-none d-lg-table-cell" scope="col"> ROI</th>
+                                <th scope="col">Stato</th>
+                                <th scope="col">Azioni</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
-                                <th scope="row"> <div class="class"> Class 17</div></th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <th scope="row"> <div class="class"> <i class="fa-solid fa-file-code text-danger"></i> Class 17</div></th>
+                               <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                <td class="d-none d-lg-table-cell">20%</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                <td><button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-trash"></i></button>
+                                </td>
                             </tr>
                             <tr>
-                                <th scope="row"> <div class="class"> Class 17</div></th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <th scope="row"> <div class="class"> <i class="fa-solid fa-file-code text-danger"></i> Class 17</div></th>
+                                <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                <td class="d-none d-lg-table-cell">20%</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                <td><button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-trash"></i></button>
+                                </td>
                             </tr>
                             <tr>
-                                <th scope="row"> <div class="class"> Class 17</div></th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
+                                <th scope="row"> <div class="class"> <i class="fa-solid fa-file-code text-danger"></i> Class 17</div></th>
+                               <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                <td class="d-none d-lg-table-cell">20%</td>
+                                <td><button type="button" class="btn btn-warning btn-sm">Process</button></td>
+                                <td><button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <div class="class"> <i class="fa-solid fa-file-code text-danger"></i> Class 17</div></th>
+                               <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                <td class="d-none d-lg-table-cell">20%</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                <td><button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <div class="class"> <i class="fa-solid fa-file-code text-danger"></i> Class 17</div></th>
+                               <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                <td class="d-none d-lg-table-cell">20%</td>
+                                <td><button type="button" class="btn btn-danger btn-sm">Failed</button></td>
+                                <td><button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <div class="class"> <i class="fa-solid fa-file-code text-danger"></i> Class 17</div></th>
+                               <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                <td class="d-none d-lg-table-cell">20%</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                <td><button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <div class="class"> <i class="fa-solid fa-file-code text-danger"></i> Class 17</div></th>
+                               <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                <td class="d-none d-lg-table-cell">20%</td>
+                                <td><button type="button" class="btn btn-danger btn-sm">Failed</button></td>
+                                <td><button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"> <div class="class"> <i class="fa-solid fa-file-code text-danger"></i> Class 17</div></th>
+                               <td class="d-none d-lg-table-cell">15 Feb 2021</td>
+                                <td class="d-none d-lg-table-cell">20%</td>
+                                <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                                
+                                <td><button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-pen"></i></button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"> <i class="fa-solid fa-trash"></i></button>
+                                </td>
+
+                               
                             </tr>
                             </tbody>
                         </table>
@@ -168,8 +257,8 @@
 
                     <!-- TO DO -->
             
-                <div class="border rounded">
-                    <h1 class="border-bottom">Todo</h1>
+                <div class="border rounded ">
+                    <h1>Todo</h1>
                 
                     <div>
                         <ul class="list-group">
@@ -190,33 +279,33 @@
                 </div>
 
                          <!-- UTENTI ATTIVI -->
-            <div class="utenti-attivi">
-                <div class="img-stats">
-                    <img src="stats.jpeg" alt="">
-                </div>
-                <div class="border rounded">
-                    <h5 class="border-bottom">Utenti attivi</h5>
-                    <div>Lista degli utenti attivi in piattaforma nell'ultimo mese</div>
-                
-                    <div>
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
-                            <label class="form-check-label stretched-link" for="firstCheckboxStretched">First checkbox</label>
-                            </li>
-                            <li class="list-group-item">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
-                            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
-                            </li>
-                            <li class="list-group-item">
-                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
-                            <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
-                            </li>
-                        </ul>
+                <div class="utenti-attivi border rounded">
+                    <div class="img-stats">
+                        <img src="stats.jpeg" alt="" class="mw-100">
                     </div>
-                </div>
+                    <div>
+                        <h5>Utenti attivi</h5>
+                        <div>Lista degli utenti attivi in piattaforma nell'ultimo mese</div>
+                    
+                        <div>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                                <label class="form-check-label stretched-link" for="firstCheckboxStretched">ok</label>
+                                </li>
+                                <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                                <label class="form-check-label stretched-link" for="secondCheckboxStretched">Second checkbox</label>
+                                </li>
+                                <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                                <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Third checkbox</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
 
-            </div>
+                </div>
 
             </div>
 
