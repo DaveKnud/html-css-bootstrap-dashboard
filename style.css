@@ -8,12 +8,29 @@ header{
     min-height: calc(100vh - 80px) ;
     width: 150px;
     background-color:#0F263D;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.nav-left a{
+    text-decoration: none;
+    color: white;
+    line-height: 35px;
+    margin-left: 10%;
+
 }
 
 /* NAV CENTER */
-.nav-center{
-    height: 150px;
+.central{
+    height: calc(100vh - 80px);
     width: 100vw;
+    background-color:beige;
+}
+.nav-center{width: 100%;}
+
+.students{
+    height: 150px;
     background-color:#1B72E8;
     padding-right: 5%;
 }
@@ -25,8 +42,3 @@ header{
 }
 
 
-/* DEBUG */
-[class*="col"] {
-    background-color: aqua;
-    border: 2px solid violet;
-}
