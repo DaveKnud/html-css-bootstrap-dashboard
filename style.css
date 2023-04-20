@@ -74,6 +74,10 @@ header i{
     background-color:#165BBA;
 }
 
+.plus.btn{
+    margin-left: 15px;
+}
+
 
 
 /* CONTAINER PROSSIME CLASSI AND FAQ */
@@ -133,17 +137,13 @@ caption,
 }
 
 
-
-/* @media all and (max-width: 768px) {
-    .container-todo-utenti-attivi{
-        width: 100%;
-}
+@media all and (max-width: 768px) {
     .container-prossime-classi-and-faq{
         width: 100%;
     }
+    .container-todo-utenti-attivi{
+        width: 100%;
 }
- */
-
-
-
-
+    
+}
+ 
