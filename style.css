@@ -3,11 +3,9 @@ header{
     padding-left: 1%;
     padding-right: 1%;
 }
-
 header i{
     padding-left: 10px;
 }
-
 .logo{
     margin-right: 15px;
 }
@@ -22,17 +20,23 @@ header i{
     padding-bottom: 10px;
     padding-top: 10px;
 }
-
 .nav-left a{
     text-decoration: none;
     color: white;
     line-height: 35px;
     margin-left: 10%;
 }
-
 .nav-left i {
     margin-right: 10px;
 }
+
+.nav-links:hover{
+    background-color:rgb(157, 157, 157);
+}
+
+
+
+
 /* NAV LEFT XS */
 .continer-nav-left-xs{
     padding: 0.5%;
@@ -57,7 +61,6 @@ header i{
 .central{
     height:100%;
     width: 100%;
-   
 }
 
 .students{
@@ -69,8 +72,8 @@ header i{
 .nav-center .boolean-piano-blaze button{
     border-radius:25px;
     background-color:#165BBA;
-    height: 30px;
 }
+
 
 
 /* CONTAINER PROSSIME CLASSI AND FAQ */
@@ -104,12 +107,20 @@ caption,
 /* FAQ */
 .faq{
     width: 100%;
-    margin-top:2%;}
+    margin-top:2%;
+}
+
+.accordion{
+ --bs-accordion-active-bg:rgb(255, 255, 255);
+ --bs-accordion-btn-focus-box-shadow:rgb(0, 0, 0);
+}
+
 
 /* TODO */
 .container-todo-utenti-attivi{
     width: 35%;
     margin: 0 auto;
+    padding:1%;
 }
 .border.rounded{
     padding:5px;
